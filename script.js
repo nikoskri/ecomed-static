@@ -80,69 +80,69 @@ document.addEventListener('DOMContentLoaded', function() {
   const heroScrollLink = document.getElementById('heroScrollLink');
   const indicators = document.querySelectorAll('.indicator');
   
-  function updateSlide(index) {
-    currentSlide = index;
-    const slide = slides[index];
-    const isPattern = slide.type === 'pattern';
+  // function updateSlide(index) {
+  //   currentSlide = index;
+  //   const slide = slides[index];
+  //   const isPattern = slide.type === 'pattern';
     
-    // Update backgrounds
-    [heroBg0, heroBg1, heroBg2, heroBg3].forEach(function(bg) {
-      bg && bg.classList.remove('active');
-    });
-    if (index === 0) {
-      heroBg0.classList.add('active');
-    } else if (index === 1) {
-      heroBg1.classList.add('active');
-    } else if (index === 2) {
-      heroBg2.classList.add('active');
-    } else {
-      heroBg3.classList.add('active');
-    }
+  //   // Update backgrounds
+  //   [heroBg0, heroBg1, heroBg2, heroBg3].forEach(function(bg) {
+  //     bg && bg.classList.remove('active');
+  //   });
+  //   if (index === 0) {
+  //     heroBg0.classList.add('active');
+  //   } else if (index === 1) {
+  //     heroBg1.classList.add('active');
+  //   } else if (index === 2) {
+  //     heroBg2.classList.add('active');
+  //   } else {
+  //     heroBg3.classList.add('active');
+  //   }
     
-    // Update overlay
-    if (isPattern) {
-      heroOverlay.classList.remove('active');
-    } else {
-      heroOverlay.classList.add('active');
-    }
+  //   // Update overlay
+  //   if (isPattern) {
+  //     heroOverlay.classList.remove('active');
+  //   } else {
+  //     heroOverlay.classList.add('active');
+  //   }
     
-    // Update content
-    heroTagline.textContent = slide.tagline;
-    heroTitle.innerHTML = slide.title;
-    heroSubtitle.textContent = slide.subtitle;
+  //   // Update content
+  //   heroTagline.textContent = slide.tagline;
+  //   heroTitle.innerHTML = slide.title;
+  //   heroSubtitle.textContent = slide.subtitle;
     
-    // Update colors based on slide type
-    if (isPattern) {
-      heroTagline.classList.remove('inverted');
-      heroTitle.classList.remove('inverted');
-      heroSubtitle.classList.remove('inverted');
-      heroBtnPrimary.classList.remove('inverted');
-      heroBtnOutline.classList.remove('inverted');
-      heroScrollLink.classList.remove('inverted');
-    } else {
-      heroTagline.classList.add('inverted');
-      heroTitle.classList.add('inverted');
-      heroSubtitle.classList.add('inverted');
-      heroBtnPrimary.classList.add('inverted');
-      heroBtnOutline.classList.add('inverted');
-      heroScrollLink.classList.add('inverted');
-    }
+  //   // Update colors based on slide type
+  //   if (isPattern) {
+  //     heroTagline.classList.remove('inverted');
+  //     heroTitle.classList.remove('inverted');
+  //     heroSubtitle.classList.remove('inverted');
+  //     heroBtnPrimary.classList.remove('inverted');
+  //     heroBtnOutline.classList.remove('inverted');
+  //     heroScrollLink.classList.remove('inverted');
+  //   } else {
+  //     heroTagline.classList.add('inverted');
+  //     heroTitle.classList.add('inverted');
+  //     heroSubtitle.classList.add('inverted');
+  //     heroBtnPrimary.classList.add('inverted');
+  //     heroBtnOutline.classList.add('inverted');
+  //     heroScrollLink.classList.add('inverted');
+  //   }
     
-    // Update indicators
-    indicators.forEach(function(indicator, i) {
-      if (i === index) {
-        indicator.classList.add('active');
-      } else {
-        indicator.classList.remove('active');
-      }
+  //   // Update indicators
+  //   indicators.forEach(function(indicator, i) {
+  //     if (i === index) {
+  //       indicator.classList.add('active');
+  //     } else {
+  //       indicator.classList.remove('active');
+  //     }
       
-      if (isPattern) {
-        indicator.classList.remove('inverted');
-      } else {
-        indicator.classList.add('inverted');
-      }
-    });
-  }
+  //     if (isPattern) {
+  //       indicator.classList.remove('inverted');
+  //     } else {
+  //       indicator.classList.add('inverted');
+  //     }
+  //   });
+  // }
   
   // Indicator click handlers
   indicators.forEach(function(indicator) {
