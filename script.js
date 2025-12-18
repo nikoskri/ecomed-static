@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // const heroBtnPrimary = document.getElementById('heroBtnPrimary');
   // const heroBtnOutline = document.getElementById('heroBtnOutline');
   // const heroScrollLink = document.getElementById('heroScrollLink');
-  // const indicators = document.querySelectorAll('.indicator');
+ const indicators = document.querySelectorAll('.indicator');
   
   // function updateSlide(index) {
   //   currentSlide = index;
