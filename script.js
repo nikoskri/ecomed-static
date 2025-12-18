@@ -152,11 +152,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Auto-rotate slides
-  setInterval(function() {
-    const nextSlide = (currentSlide + 1) % slides.length;
-    updateSlide(nextSlide);
-  }, 6000);
+  // // Auto-rotate slides
+  // setInterval(function() {
+  //   const nextSlide = (currentSlide + 1) % slides.length;
+  //   updateSlide(nextSlide);
+  // }, 6000);
   
   // ========================================
   // Contact Form
