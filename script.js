@@ -70,10 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // const heroBg0 = document.getElementById('heroBg0');
   // const heroBg1 = document.getElementById('heroBg1');
   // const heroBg2 = document.getElementById('heroBg2');
-  // const heroBg3 = document.getElementById('heroBg3');
-  // const heroOverlay = document.getElementById('heroOverlay');
-  // const heroTagline = document.getElementById('heroTagline');
-  // const heroTitle = document.getElementById('heroTitle');
+   const heroBg3 = document.getElementById('heroBg3');
+   const heroOverlay = document.getElementById('heroOverlay');
+  const heroTagline = document.getElementById('heroTagline');
+   const heroTitle = document.getElementById('heroTitle');
   // const heroSubtitle = document.getElementById('heroSubtitle');
   // const heroBtnPrimary = document.getElementById('heroBtnPrimary');
   // const heroBtnOutline = document.getElementById('heroBtnOutline');
