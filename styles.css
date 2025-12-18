@@ -496,7 +496,6 @@ img {
   color: var(--foreground);
 }
 
-
 .scroll-link.inverted {
   color: hsla(0, 0%, 99%, 0.7);
 }
