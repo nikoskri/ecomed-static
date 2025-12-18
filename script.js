@@ -40,24 +40,24 @@ document.addEventListener('DOMContentLoaded', function() {
   // Hero Carousel
   // ========================================
   const slides = [
-    {
-      type: 'pattern',
-      tagline: '',
-      title: 'Beyond Consultancy: <br>Designing a Future Where Nature, Culture & Innovation Coexist',
-      subtitle: ''
-    },
-    {
-      type: 'pattern',
-      tagline: '',
-      title: 'Beyond Consultancy: <br>Designing a Future Where Nature, Culture & Innovation Coexist',
-      subtitle: ''
-    },
-    {
-      type: 'image',
-      tagline: '',
-      title: 'Beyond Consultancy: <br>Designing a Future Where Nature, Culture & Innovation Coexist',
-      subtitle: ''
-    },
+    // {
+    //   type: 'pattern',
+    //   tagline: '',
+    //   title: 'Beyond Consultancy: <br>Designing a Future Where Nature, Culture & Innovation Coexist',
+    //   subtitle: ''
+    // },
+    // {
+    //   type: 'pattern',
+    //   tagline: '',
+    //   title: 'Beyond Consultancy: <br>Designing a Future Where Nature, Culture & Innovation Coexist',
+    //   subtitle: ''
+    // },
+    // {
+    //   type: 'image',
+    //   tagline: '',
+    //   title: 'Beyond Consultancy: <br>Designing a Future Where Nature, Culture & Innovation Coexist',
+    //   subtitle: ''
+    // },
     {
       type: 'image',
       tagline: '',
@@ -66,19 +66,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   ];
   
-  let currentSlide = 0;
-  const heroBg0 = document.getElementById('heroBg0');
-  const heroBg1 = document.getElementById('heroBg1');
-  const heroBg2 = document.getElementById('heroBg2');
-  const heroBg3 = document.getElementById('heroBg3');
-  const heroOverlay = document.getElementById('heroOverlay');
-  const heroTagline = document.getElementById('heroTagline');
-  const heroTitle = document.getElementById('heroTitle');
-  const heroSubtitle = document.getElementById('heroSubtitle');
-  const heroBtnPrimary = document.getElementById('heroBtnPrimary');
-  const heroBtnOutline = document.getElementById('heroBtnOutline');
-  const heroScrollLink = document.getElementById('heroScrollLink');
-  const indicators = document.querySelectorAll('.indicator');
+  // let currentSlide = 0;
+  // const heroBg0 = document.getElementById('heroBg0');
+  // const heroBg1 = document.getElementById('heroBg1');
+  // const heroBg2 = document.getElementById('heroBg2');
+  // const heroBg3 = document.getElementById('heroBg3');
+  // const heroOverlay = document.getElementById('heroOverlay');
+  // const heroTagline = document.getElementById('heroTagline');
+  // const heroTitle = document.getElementById('heroTitle');
+  // const heroSubtitle = document.getElementById('heroSubtitle');
+  // const heroBtnPrimary = document.getElementById('heroBtnPrimary');
+  // const heroBtnOutline = document.getElementById('heroBtnOutline');
+  // const heroScrollLink = document.getElementById('heroScrollLink');
+  // const indicators = document.querySelectorAll('.indicator');
   
   // function updateSlide(index) {
   //   currentSlide = index;
