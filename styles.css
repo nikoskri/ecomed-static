@@ -647,8 +647,8 @@ img {
   opacity: 1;
   transform: translateX(0);
 }
-.chain {background-image: url(assets/chain-grad.png); background-repeat: no-repeat; background-size: 25%;
-background-position: 90% 31.5%;}
+.chain {background-image: url(assets/chain-grad.png); background-repeat: no-repeat; background-size: 24%;
+background-position: 90% 33.5%;}
 @media (min-width: 768px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -918,7 +918,7 @@ border:1px solid var(--ecomed-light-blue);
 .contact-form-wrapper {
   /* background-color: var(--card); */
   /* border: 1px solid var(--border); */
-  padding: 2.4rem 1.6rem 1.6rem 1.6rem;
+  padding: 2.7rem 1.6rem 1.6rem 1.6rem;
 }
 
 .contact-form {
