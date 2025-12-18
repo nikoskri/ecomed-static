@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
    const heroOverlay = document.getElementById('heroOverlay');
   const heroTagline = document.getElementById('heroTagline');
    const heroTitle = document.getElementById('heroTitle');
-  // const heroSubtitle = document.getElementById('heroSubtitle');
+   const heroSubtitle = document.getElementById('heroSubtitle');
   // const heroBtnPrimary = document.getElementById('heroBtnPrimary');
   // const heroBtnOutline = document.getElementById('heroBtnOutline');
   // const heroScrollLink = document.getElementById('heroScrollLink');
