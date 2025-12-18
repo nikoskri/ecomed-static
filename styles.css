@@ -1056,6 +1056,17 @@ height:1.8rem; width:auto
   }
 }
 
+@keyframes fadeInCentered {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
