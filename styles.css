@@ -918,7 +918,7 @@ border:1px solid var(--ecomed-light-blue);
 .contact-form-wrapper {
   /* background-color: var(--card); */
   /* border: 1px solid var(--border); */
-  padding: 1.6rem;
+  padding: 2.3rem 1.6rem 1.6rem 1.6rem;
 }
 
 .contact-form {
