@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // ========================================
   // Hero Carousel
   // ========================================
-  const slides = [
+  // const slides = [
     // {
     //   type: 'pattern',
     //   tagline: '',
@@ -58,27 +58,27 @@ document.addEventListener('DOMContentLoaded', function() {
     //   title: 'Beyond Consultancy: <br>Designing a Future Where Nature, Culture & Innovation Coexist',
     //   subtitle: ''
     // },
-    {
-      type: 'image',
-      tagline: '',
-      title: 'Beyond Consultancy: <br>Designing a Future Where Nature, Culture & Innovation Coexist',
-      subtitle: ''
-    }
-  ];
+  //   {
+  //     type: 'image',
+  //     tagline: '',
+  //     title: 'Beyond Consultancy: <br>Designing a Future Where Nature, Culture & Innovation Coexist',
+  //     subtitle: ''
+  //   }
+  // ];
   
   // let currentSlide = 0;
   // const heroBg0 = document.getElementById('heroBg0');
   // const heroBg1 = document.getElementById('heroBg1');
   // const heroBg2 = document.getElementById('heroBg2');
-   const heroBg3 = document.getElementById('heroBg3');
-   const heroOverlay = document.getElementById('heroOverlay');
-  const heroTagline = document.getElementById('heroTagline');
-   const heroTitle = document.getElementById('heroTitle');
-   const heroSubtitle = document.getElementById('heroSubtitle');
+  //  const heroBg3 = document.getElementById('heroBg3');
+  //  const heroOverlay = document.getElementById('heroOverlay');
+  // const heroTagline = document.getElementById('heroTagline');
+  //  const heroTitle = document.getElementById('heroTitle');
+  //  const heroSubtitle = document.getElementById('heroSubtitle');
   // const heroBtnPrimary = document.getElementById('heroBtnPrimary');
   // const heroBtnOutline = document.getElementById('heroBtnOutline');
   // const heroScrollLink = document.getElementById('heroScrollLink');
- const indicators = document.querySelectorAll('.indicator');
+//  const indicators = document.querySelectorAll('.indicator');
   
   // function updateSlide(index) {
   //   currentSlide = index;
@@ -145,12 +145,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // }
   
   // Indicator click handlers
-  indicators.forEach(function(indicator) {
-    indicator.addEventListener('click', function() {
-      const slideIndex = parseInt(this.getAttribute('data-slide'));
-      updateSlide(slideIndex);
-    });
-  });
+  // indicators.forEach(function(indicator) {
+  //   indicator.addEventListener('click', function() {
+  //     const slideIndex = parseInt(this.getAttribute('data-slide'));
+  //     updateSlide(slideIndex);
+  //   });
+  // });
   
   // // Auto-rotate slides
   // setInterval(function() {
