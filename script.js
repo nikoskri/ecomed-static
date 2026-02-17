@@ -35,6 +35,34 @@ document.addEventListener('DOMContentLoaded', function() {
       closeIcon.classList.add('hidden');
     });
   });
+
+  // Mobile Dropdown Menu Toggle
+  const mobileDropdownBtns = mobileNav.querySelectorAll('.mobile-dropdown-btn');
+  mobileDropdownBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const dropdownContent = this.nextElementSibling;
+      dropdownContent.classList.toggle('active');
+    });
+  });
+
+  // Mobile Nested Dropdown Menu Toggle
+  const mobileNestedBtns = mobileNav.querySelectorAll('.mobile-nested-btn');
+  mobileNestedBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const nestedContent = this.nextElementSibling;
+      nestedContent.classList.toggle('active');
+    });
+  });
+
+  // Close mobile menu when clicking a link in dropdown
+  const mobileDropdownLinks = mobileNav.querySelectorAll('.mobile-dropdown-content a, .mobile-nested-content a');
+  mobileDropdownLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      mobileNav.classList.add('hidden');
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    });
+  });
   
   // ========================================
   // Hero Carousel
@@ -211,5 +239,49 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  
+  // ========================================
+  // Stat Numbers Counter Animation
+  // ========================================
+  const observerOptions = {
+    threshold: 0.5,
+    rootMargin: '0px'
+  };
+  
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+        entry.target.classList.add('animated');
+        animateCounter(entry.target);
+      }
+    });
+  }, observerOptions);
+  
+  // Observe all stat numbers
+  const statNumbers = document.querySelectorAll('.stat-number');
+  statNumbers.forEach(function(stat) {
+    observer.observe(stat);
+  });
+  
+  function animateCounter(element) {
+    const text = element.textContent;
+    const number = parseInt(text) || 0;
+    const suffix = text.replace(/[0-9]/g, '');
+    const duration = 1500; // 1.5 seconds
+    const startTime = Date.now();
+    
+    function update() {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const current = Math.floor(number * progress);
+      element.textContent = current + suffix;
+      
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      }
+    }
+    
+    update();
+  }
   
 });
