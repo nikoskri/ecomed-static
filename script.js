@@ -203,13 +203,27 @@ document.addEventListener('DOMContentLoaded', function() {
       message: formData.get('message')
     };
     
-    // Here you would typically send the data to a server
-    // For now, we'll just log it and show an alert
-    console.log('Form submitted:', data);
-    alert('Thank you for your message! We will get back to you soon.');
-    
-    // Reset form
-    contactForm.reset();
+    // Send data to PHP backend
+    fetch('/send-email.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+      if (result.success) {
+        alert('Thank you for your message! We will get back to you soon.');
+        contactForm.reset();
+      } else {
+        alert('Error sending message: ' + result.error);
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Error sending message. Please try again.');
+    });
   });
   
   // ========================================
