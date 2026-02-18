@@ -1264,6 +1264,9 @@ height:1.8rem; width:auto
   .hero-page .hero-title {
     font-size: 3.7vw !important;
   }   
+  .hero-page, .hero-page .hero-bg, .hero-page .hero-overlay {
+  height: 82vh;
+}
 }
 
 
