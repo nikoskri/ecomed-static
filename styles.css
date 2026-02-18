@@ -548,7 +548,7 @@ img {
   text-align: center; 
   color: white !important; 
 margin: 0 !important; line-height: normal; font-size:2.4rem; line-height: 1.15 !important;
-transform: translateY(8%);
+transform: translateY(10%);
 }
 .gradient-text {
   background-image: linear-gradient(180deg, var(--ecomed-blue), var(--ecomed-green));
