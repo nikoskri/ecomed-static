@@ -523,7 +523,7 @@ img {
    border-top:1px solid #bcbcbc;
 }
 .hero-page {
-  height: 77vh;
+  height: 75vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -540,7 +540,7 @@ img {
   inset: 0;
   opacity: 1;
   transition: opacity 1s ease;
-  height: 77vh;
+  height: 75vh;
   overflow: hidden;
 }
 .hero-page .hero-content {padding:0; width:100% !important;max-width: 1400px;}
