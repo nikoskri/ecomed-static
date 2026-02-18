@@ -547,7 +547,7 @@ img {
 .hero-page .hero-title {padding-left: 0;
   text-align: center; 
   color: white !important; 
-margin: 0 !important; line-height: normal; font-size:2.4rem
+margin: 0 !important; line-height: normal; font-size:2.4rem; line-height: 1.15;
 }
 .gradient-text {
   background-image: linear-gradient(180deg, var(--ecomed-blue), var(--ecomed-green));
