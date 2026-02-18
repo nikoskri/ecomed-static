@@ -1262,7 +1262,7 @@ height:1.8rem; width:auto
    ======================================== */
 @media (min-width:1200px) and (max-width:1920px) {
   .hero-page .hero-title {
-    font-size: 4vw;
+    font-size: 4vw !important;
   }   
 }
 
