@@ -22,7 +22,7 @@
   --primary-light: hsla(199, 89%, 38%, 0.1);
   
   /* Secondary */
-  --secondary: hsl(220, 14%, 96%);
+  --secondary: hsl(220, 14%, 94%);
   --secondary-foreground: hsl(220, 20%, 15%);
   
   /* Muted */
@@ -40,7 +40,7 @@
   --accent-orange-light: hsla(22, 75%, 50%, 0.3);
   
   /* Border */
-  --border: hsl(220, 14%, 90%);
+  --border: hsl(220, 14%, 87%);
   --input: hsl(220, 14%, 90%);
   --ring: hsl(199, 89%, 38%);
   
@@ -255,7 +255,17 @@ img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   border: 1px solid var(--border);
-  margin-top: 0.4em;
+  top: 100%;
+  margin-top: 0.5rem;
+}
+
+.dropdown-content::before {
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
 }
 
 .dropdown-content a {
@@ -265,6 +275,7 @@ img {
   display: block;
   font-size: 1rem;
   transition: background-color 0.2s ease, color 0.2s ease;
+  background-color: white;
 }
 
 .dropdown-content a:hover {
@@ -306,6 +317,8 @@ img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--border);
   z-index: 1001;
+  margin-left: -0.5rem;
+  padding-left: 0.5rem;
 }
 
 .dropdown-nested-content a {
@@ -315,6 +328,7 @@ img {
   display: block;
   font-size: 1rem;
   transition: background-color 0.2s ease, color 0.2s ease;
+  background-color: white;
 }
 
 .dropdown-nested-content a:hover {
@@ -330,14 +344,13 @@ img {
   font-size: 1.15rem;
   font-weight: 400;
   color: var(--ecomed-gray);
-  transition: color 0.2s ease;
-  padding:.4em 1.2em;
-  
+  padding:.5em 0;
+  margin:0 1.3em;
+   border-top: 1px solid transparent; 
 }
 
 .nav-link:hover {
-  color: var(--foreground);
-  background: rgba(0, 0, 0, 0.04);
+  border-top: 1px solid var(--ecomed-gray);
 }
 
 .mobile-menu-btn {
@@ -811,6 +824,26 @@ margin:0 !important;padding: 0 1.4em;padding-top: 1em;
   font-size: 1.125rem;
   line-height: 1.7;
   color: var(--muted-foreground);
+}
+
+/* ========================================
+   Viewport Animations
+   ======================================== */
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ensure hero is always visible */
+.hero {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 /* ========================================
@@ -1298,6 +1331,8 @@ margin: 0 !important; line-height: normal;font-size: 4rem;
     gap: 2rem;
     padding-left: 0;
   }
+  .projects-list-page .project-card {padding:1em !important; margin-bottom:.6em}
+
   .contact-form-wrapper {
   /* background-color: var(--card); */
   /* border: 1px solid var(--border); */
