@@ -243,24 +243,24 @@ document.addEventListener('DOMContentLoaded', function() {
   // ========================================
   // Section Viewport Animation
   // ========================================
-  const sectionObserverOptions = {
-    threshold: 0.15,
-    rootMargin: '0px'
-  };
+  // const sectionObserverOptions = {
+  //   threshold: 0.15,
+  //   rootMargin: '0px'
+  // };
   
-  const sectionObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('section-visible');
-      }
-    });
-  }, sectionObserverOptions);
+  // const sectionObserver = new IntersectionObserver(function(entries) {
+  //   entries.forEach(function(entry) {
+  //     if (entry.isIntersecting) {
+  //       entry.target.classList.add('section-visible');
+  //     }
+  //   });
+  // }, sectionObserverOptions);
   
-  // Observe all sections
-  const sections = document.querySelectorAll('.section');
-  sections.forEach(function(section) {
-    sectionObserver.observe(section);
-  });
+  // // Observe all sections
+  // const sections = document.querySelectorAll('.section');
+  // sections.forEach(function(section) {
+  //   sectionObserver.observe(section);
+  // });
   
   // ========================================
   // Stat Numbers Counter Animation
