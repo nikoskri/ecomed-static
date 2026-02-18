@@ -1260,6 +1260,16 @@ height:1.8rem; width:auto
 /* ========================================
    Responsive Media Queries
    ======================================== */
+@media (min-width:1200px) and (max-width:1920px) {
+  .hero-page .hero-title {
+    font-size: 4vw;
+  }   
+}
+
+
+
+
+
 
 /* 640px Breakpoint */
 @media (min-width: 640px) {
