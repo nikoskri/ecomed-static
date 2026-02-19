@@ -297,10 +297,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }, sectionObserverOptions);
   
-  // Observe all sections (excluding first 2)
+  // Make all sections visible immediately
   const sections = document.querySelectorAll('.section');
-  Array.from(sections).slice(2).forEach(function(section) {
-    sectionObserver.observe(section);
+  sections.forEach(function(section) {
+    section.classList.add('section-visible');
   });
   
   // ========================================
