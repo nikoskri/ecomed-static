@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const sectionObserver = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && window.scrollY > window.innerHeight) {
         entry.target.classList.add('section-visible');
       }
     });
