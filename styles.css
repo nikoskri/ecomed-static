@@ -1245,7 +1245,7 @@ border:1px solid var(--ecomed-light-blue);
   font-size: 1.25rem;
 }
 .footer-logo img{
-height:1.8rem; width:auto; opacity: 0.62;
+height:1.8rem; width:auto; opacity: 0.59;
 }
 .footer-nav {
   display: flex;
