@@ -40,7 +40,7 @@
   --accent-orange-light: hsla(22, 75%, 50%, 0.3);
   
   /* Border */
-  --border: hsl(220, 14%, 87%);
+  --border: hsl(220, 14%, 77%);
   --input: hsl(220, 14%, 90%);
   --ring: hsl(199, 89%, 38%);
   
@@ -280,7 +280,7 @@ img {
 
 .dropdown-content a:hover {
   background-color: rgba(0, 0, 0, 0.04);
-  color: var(--foreground);
+  color: var(--ecomed-blue);
 }
 
 .nav-dropdown:hover .dropdown-content {
@@ -304,7 +304,7 @@ img {
 
 .dropdown-link:hover {
   background-color: rgba(0, 0, 0, 0.04);
-  color: var(--foreground);
+  color: var(--ecomed-blue);
 }
 
 .dropdown-nested-content {
@@ -333,7 +333,7 @@ img {
 
 .dropdown-nested-content a:hover {
   background-color: rgba(0, 0, 0, 0.04);
-  color: var(--foreground);
+  color: var(--ecomed-blue);
 }
 
 .nav-dropdown-nested:hover .dropdown-nested-content {
@@ -350,7 +350,11 @@ img {
 }
 
 .nav-link:hover {
-  border-top: 1px solid var(--ecomed-gray);
+color: var(--ecomed-blue);
+}
+
+.nav-link.active {
+  color: var(--ecomed-blue);
 }
 
 .mobile-menu-btn {
@@ -1038,7 +1042,14 @@ border:1px solid var(--ecomed-light-blue);
   border-color: hsla(220, 14%, 90%, 0.6);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
-
+.client h3 {padding-bottom: .5em; font-size:1.45rem}
+.client strong {font-weight: 500; font-size: 1.125rem;}
+.client p {padding: .2em 0; font-size: 1.125rem;}
+.project-separator {
+  height: 1px;
+  border-top:1px dashed var(--border);
+  margin: 0.57rem 0;
+}
 .project-indicator {
   position: absolute;
   top: 0;

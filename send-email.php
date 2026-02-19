@@ -72,7 +72,7 @@ $subject = str_replace(["\n", "\r"], '', $subject);
 $name = str_replace(["\n", "\r"], '', $name);
 
 // Set recipient email address (CHANGE THIS TO YOUR EMAIL)
-$recipient = 'thomas.kollias@eco-med.gr'; // Update with your actual email
+$recipient = 'nikoskrikelis@gmail.com'; // Update with your actual email
 
 // Validate recipient email
 if (!filter_var($recipient, FILTER_VALIDATE_EMAIL)) {

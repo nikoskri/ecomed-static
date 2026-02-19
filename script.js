@@ -63,6 +63,33 @@ document.addEventListener('DOMContentLoaded', function() {
       closeIcon.classList.add('hidden');
     });
   });
+
+  // ========================================
+  // Active Navigation Link
+  // ========================================
+  // const navLinks = document.querySelectorAll('nav a[href]');
+  // const rawPath = window.location.pathname.split('/').pop();
+  // const currentPage = rawPath === '' ? 'index.html' : rawPath;
+  // const currentHash = window.location.hash;
+
+  // navLinks.forEach(function(link) {
+  //   const href = link.getAttribute('href');
+  //   if (!href || href === '#' || href.startsWith('http') || href.startsWith('mailto:')) {
+  //     return;
+  //   }
+
+  //   if (href.startsWith('#')) {
+  //     if (currentHash && href === currentHash) {
+  //       link.classList.add('active');
+  //     }
+  //     return;
+  //   }
+
+  //   const linkPath = href.split('#')[0];
+  //   if (linkPath === currentPage) {
+  //     link.classList.add('active');
+  //   }
+  // });
   
   // ========================================
   // Hero Carousel
