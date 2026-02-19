@@ -291,15 +291,15 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const sectionObserver = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
-      if (entry.isIntersecting && window.scrollY > window.innerHeight) {
+      if (entry.isIntersecting) {
         entry.target.classList.add('section-visible');
       }
     });
   }, sectionObserverOptions);
   
-  // Observe all sections
+  // Observe all sections (excluding first 2)
   const sections = document.querySelectorAll('.section');
-  sections.forEach(function(section) {
+  Array.from(sections).slice(2).forEach(function(section) {
     sectionObserver.observe(section);
   });
   
