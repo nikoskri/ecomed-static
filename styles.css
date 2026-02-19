@@ -575,7 +575,7 @@ margin:0 !important;padding: 0 1.4em;padding-top: 1em;
 .pattern-overlay {
     position: absolute;
     inset: 0;
-    background-color: hsla(220, 20%, 15%, 0.69);
+    background-color: hsla(220, 20%, 15%, 0.6);
     opacity: 1;
     transition: none;
     display: flex;
@@ -637,7 +637,7 @@ margin:0 !important;padding: 0 1.4em;padding-top: 1em;
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background-color: hsla(220, 20%, 15%, 0.69);
+  background-color: hsla(220, 20%, 15%, 0.6);
   opacity: 1;
   transition: none;
 }
