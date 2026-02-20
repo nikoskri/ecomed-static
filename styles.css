@@ -1280,7 +1280,7 @@ height:1.8rem; width:auto; opacity: 0.59;
   height: 82vh;
 }
   .hero-page .hero-subtitle {
-    font-size: 1.2vw !important;
+    font-size: 1.2vw !important;padding-left:calc(2vw + 1.5rem) !important;
   }
 }
 
