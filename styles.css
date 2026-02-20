@@ -318,7 +318,7 @@ img {
   border: 1px solid var(--border);
   z-index: 1001;
   margin-left: -0.5rem;
-  padding-left: 0.5rem;
+  padding-left: 0;
 }
 
 .dropdown-nested-content a {
