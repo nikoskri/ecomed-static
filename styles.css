@@ -1274,7 +1274,7 @@ height:1.8rem; width:auto; opacity: 0.59;
    Responsive Media Queries
    ======================================== */
 @media (min-width:1100px) and (max-width:1500px) {
-  body {font-size: 80%;}
+  body > * {font-size: 95% !important;}
   .logo img {
     height: 3rem;
     width: auto;
