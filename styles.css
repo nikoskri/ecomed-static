@@ -1279,10 +1279,10 @@ height:1.8rem; width:auto; opacity: 0.59;
     height: 2.9rem !important;
     width: auto;
   }
-  .section-title {font-size: 2.3rem !important;}
+  .section-title {font-size: 2.34rem !important;}
   .nav-link, .nav-dropdown {font-size: 1.05rem;}
   .hero-page .hero-title {
-    font-size: 2.4rem !important;padding-left:calc(2vw + 1.5rem) !important;padding-top:1.3rem;
+    font-size: 2.55rem !important;padding-left:calc(2vw + 1.5rem) !important;padding-top:1.3rem;
   }   
   .hero-page, .hero-page .hero-bg, .hero-page .hero-overlay {
   height: 82vh;
